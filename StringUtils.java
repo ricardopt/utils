@@ -13,6 +13,10 @@ public class StringUtils {
      * @return
      */
     public static boolean isPalindrome(String input) {
+        if(input == null){
+            return false;
+        }
+        
         int length = input.length();
         int i;
         for (i = 0; i < (length / 2); ++i) {
